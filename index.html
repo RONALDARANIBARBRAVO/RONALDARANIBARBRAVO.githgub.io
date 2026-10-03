@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ronald Bravo </title>
+
+<!--AQUI VA EL CSS, MUCHACHOOOOOO-->
+<!--AQUI VA EL CSS, MUCHACHOOOOOO-->
+
+	<style>
+
+		body 
+		{
+            background-color: black;  /* Fondo negro */
+            color: white;             /* Letras blancas */
+            font-family: Georgia, 'Times New Roman', serif; /* Tipo de letra Georgia */
+        }
+
+        body > header /* este header es hijo directo de body, no es el header del artgicle, ojito con eso muchachoo*/
+
+    	{
+        text-align: center;       /* ¡Esta línea centra el h1, h2 e img! */
+        padding: 30px 20px;       /* Le da espacio arriba, abajo y a los lados */
+        border-bottom: 1px solid #333; /* línea de separacion */
+    	}
+
+			.cursiva 
+    		{
+        	font-style: italic;       /* Pone el texto en cursiva */
+    		}
+
+		main article 
+   		 {
+        max-width: 800px; /* Limita el ancho para crear los espacios laterales */
+        margin: 0 auto;    /* Centra el bloque horizontalmente */
+        padding: 0 20px;   /* Espacio de seguridad para pantallas pequeñas */
+        }
+
+		main article img 
+		{
+			max-height: 300px; /* ancho maximo de las imagenes en el main*/
+			height: auto;   /* mantiene la proporcion de la imagen*/
+			display: block; /*necesario para el marging*/
+  			margin: 0 auto;  /*centrado de imagen*/
+		}
+		.galeria {
+        display: flex;           /* Pone las fotos en fila horizontal */
+        justify-content: center; /* Las centra en la pantalla */
+        gap: 15px;               /* Espacio de separación entre cada foto */
+        margin-top: 20px;
+        margin-bottom: 30px;     /* Espacio debajo de las fotos */
+    	}
+    	.galeria img {
+        width: 33.33%;           /* Cada foto ocupa un tercio del ancho total */
+        height: 250px;           /* Altura fija para que se vean parejas */
+        object-fit: cover;       /* Recorta la foto para llenar el espacio sin deformar a los músicos */
+        border-radius: 8px;      /* Bordes ligeramente redondeados */
+        box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* Sombra sutil para que resalten en el fondo negro */
+    	}
+	</style>
+
+</head>
+
+
+<!--CUERPO--><!--CUERPO-->
+<!--CUERPO--><!--CUERPO-->
+<!--CUERPO--><!--CUERPO-->
+<!--CUERPO--><!--CUERPO-->
+
+
+<body>
+<!--CABEZERA Y LOGO-->
+	<header>
+		<h1> Ronald Bravo </h1>
+		<p class="cursiva"> Perú</p>
+		
+	</header>
+
+<!--CONTENIDO PRINCIPAL (MAIIN)-->
+<!--====== (MAIIN)=========-->
+<!--====== (MAIIN)=========-->
+	<main> 
+	<article>  
+		<div class="galeria">
+		 <!-- Sección de fotos -->
+    	 
+        	<img src="imagenes/iwanna.jpeg">
+        	<img src="imagenes/mafia.jpg">
+        	<img src="imagenes/sushi.jpeg">
+    	</div>
+    </article>
+    <article>
+    	<p>	Aquella noche de setiembre, fuiste
+			tan buena para mí... hasta dolerme!
+			Yo no sé lo demás; y para eso,
+			no debiste ser buena, no debiste.
+
+			Aquella noche sollozaste al verme
+			hermético y tirano, enfermo y triste.
+			Yo no sé lo demás... y para eso,
+			yo no sé por qué fui triste... tan triste...!
+
+			Solo esa noche de setiembre dulce,
+			tuve a tus ojos de Magdala, toda
+			la distancia de Dios... y te fui dulce!
+
+			Y también fue una tarde de setiembre
+			cuando sembré en tus brasas, desde un auto,
+			los charcos de esta noche de diciembre. </p>
+    </article>
+	</main>
+</body>
+</html>
