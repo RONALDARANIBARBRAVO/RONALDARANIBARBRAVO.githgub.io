@@ -63,7 +63,34 @@
         object-fit: cover;       /* Recorta la foto para llenar el espacio sin deformar a los músicos */
         border-radius: 8px;      /* Bordes ligeramente redondeados */
         box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* Sombra sutil para que resalten en el fondo negro */
+        #nosotros li
     	}
+		{
+		color: white;   /* color del texto y de la viñeta */
+		}
+    	
+    	#nosotros li::marker
+		{
+		color: white;   /* color solo de la viñeta */
+		}
+
+		/* FOOTER */
+		body > footer
+		{
+			text-align: center;
+			padding: 30px 20px;
+			margin: 40px auto 0;   /* centra el bloque y deja espacio arriba */
+			max-width: 800px;
+			border-top: 1px solid #333;
+			font-size: 0.9rem;
+		}
+
+		body > footer a
+		{
+		color: white;
+		margin: 0 10px;
+		}
+
 	</style>
 
 </head>
@@ -94,7 +121,7 @@
 <!--====== (MAIIN)=========-->
 	<main> 
 	<article>  
-		<div class="galeria">
+		<div class="galeria" id= "galeria">
 		 <!-- Sección de fotos -->
     	 
         	<img src="imagenes/iwanna.jpeg">
@@ -103,16 +130,41 @@
     	</div>
     </article>
 		 <!-- Link de youtube -->
-    <article>
-		<iframe
-        width="560" height="315"
-        src="https://www.youtube.com/embed/ed5M1iym07A"
-        title="Video de Perú Sport"
-        allowfullscreen>
-		
-		</iframe>
-    	
-    </article>
+    
+    <!-- NUEVO: sección Nosotros -->
+	<article id="nosotros">
+		<h2>Nosotros</h2>
+		<p> Somos una tienda virtual orgullosamente peruana, apasionada por el deporte, la moda urbana y el confort. Sabemos que unas zapatillas no son solo un calzado: son parte de tu identidad, tu ritmo y tus metas. Por eso seleccionamos cuidadosamente cada modelo, combinando las mejores marcas y tendencias con la atención cercana que mereces.
+
+		Nuestro compromiso es simple:
+
+	<ul>
+
+	<li>Calidad garantizada: trabajamos con productos originales y de coNuestro compromiso es simple:nfianza. </li>	
+
+	<li>Atención personalizada: te asesoramos para que elijas con seguridad.</il>
+
+	<il> Envíos a todo el Perú: porque queremos llegar donde tú estés. </il>
+
+	</ul>
+
+	<p>En Perú Sport no solo vendemos zapatillas: te acompañamos en cada paso, cada entrenamiento, cada salida y cada meta que te propongas. Porque cuando caminas con confianza, llegas más lejos.</p>
+
+	<p>Perú Sport – Tu estilo, tu ritmo, tu mejor paso.</p>
+	</article>
+
 	</main>
+
+	<footer>
+		<p>Perú Sport</p>
+		<p>WhatsApp: +51 946 147 814 | Correo: aranibarbravoronald@gmail.com</p>
+		<nav aria-label="Enlaces del pie de página">
+			<a href="#">Términos y condiciones</a>
+			<a href="#">Política de privacidad</a>
+			<a href="#">Libro de Reclamaciones</a>
+		</nav>
+		<p>&copy; 2026 Perú Sport. Todos los derechos reservados.</p>
+	</footer>
+
 </body>
 </html>
