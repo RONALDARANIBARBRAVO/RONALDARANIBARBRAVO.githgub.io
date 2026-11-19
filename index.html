@@ -3,7 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Perú Sport </title>
+	<title> Raíces </title>
+
+	<!--TIPO DE LETRA DE TODA LA PAGINA-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
 <!--AQUI VA EL CSS -->
 <!--AQUI VA EL CSS -->
@@ -12,9 +18,9 @@
 
 		body 
 		{
-            background-color: black;  /* Fondo negro */
-            color: white;             /* Letras blancas */
-            font-family: Georgia, 'Times New Roman', serif; /* Tipo de letra Georgia */
+            background-color: #D5E8D4;  /* Fondo negro */
+            color: black;             /* LetrasSSS blancas */
+            font-family: 'Merriweather', Georgia, serif;
         }
 
         body > header /* este header es hijo directo de body, no es el header del artgicle, ojito con eso muchachoo*/
@@ -50,6 +56,15 @@
 			display: block; /*necesario para el marging*/
   			margin: 0 auto;  /*centrado de imagen*/
 		}
+
+	/* TAMAÑO DE LETRA DE TODOS LOS TEXTOS Y DE LOS PARRAFOS*/
+
+		main article p
+		{
+		font-size: 22px;   /* JUSTO AQUI, LOS PIXELES */
+		line-height: 1.5; /*para que este compacto*/
+		}
+
 		.galeria {
         display: flex;           /* Pone las fotos en fila horizontal */
         justify-content: center; /* Las centra en la pantalla */
@@ -87,8 +102,9 @@
 
 		body > footer a
 		{
-		color: white;
+		color: black;
 		margin: 0 10px;
+		font-size: 1rem;
 		}
 
 	</style>
@@ -105,7 +121,8 @@
 <body>
 <!--CABEZERA Y LOGO-->
 	<header>
-		<h1> Perú Sport </h1>
+		<img src="imagenes/logo.jpg">
+		
 		<p class="cursiva"> Perú</p>
 		<nav aria-label="Navegación principal">
 			<ul>
@@ -124,9 +141,9 @@
 		<div class="galeria" id= "galeria">
 		 <!-- Sección de fotos -->
     	 
-        	<img src="imagenes/iwanna.jpeg">
-        	<img src="imagenes/mafia.jpg">
-        	<img src="imagenes/sushi.jpeg">
+        	<img src="imagenes/pastores1.jpg">
+        	<img src="imagenes/mujeres1.jpg">
+        	<img src="imagenes/pastores2.jpg">
     	</div>
     </article>
 		 <!-- Link de youtube -->
@@ -134,29 +151,36 @@
     <!-- NUEVO: sección Nosotros -->
 	<article id="nosotros">
 		<h2>Nosotros</h2>
-		<p> Somos una tienda virtual orgullosamente peruana, apasionada por el deporte, la moda urbana y el confort. Sabemos que unas zapatillas no son solo un calzado: son parte de tu identidad, tu ritmo y tus metas. Por eso seleccionamos cuidadosamente cada modelo, combinando las mejores marcas y tendencias con la atención cercana que mereces.
+		<p> Somos presa escrita y digital de la provincia de Antabamba, tierra de tradiciones.
 
 		Nuestro compromiso es simple:
 
 	<ul>
 
-	<li>Calidad garantizada: trabajamos con productos originales y de coNuestro compromiso es simple:nfianza. </li>	
+	<li> Abordamos tema culturales </li>	
 
-	<li>Atención personalizada: te asesoramos para que elijas con seguridad.</il>
+	<li> Ofrecemos una guia turistica </li>
 
-	<il> Envíos a todo el Perú: porque queremos llegar donde tú estés. </il>
+	<li> Creamos productos para resaltar y reinvindicar la cultura </li>
 
 	</ul>
 
-	<p>En Perú Sport no solo vendemos zapatillas: te acompañamos en cada paso, cada entrenamiento, cada salida y cada meta que te propongas. Porque cuando caminas con confianza, llegas más lejos.</p>
-
-	<p>Perú Sport – Tu estilo, tu ritmo, tu mejor paso.</p>
+	</article>
+	<article class="post">
+		<h2><a href="post1.html">CALIDAD Y ELEGANCIA EN LA HUAYLIA ANTABAMBINA</a></h2>
+	<p>18 de noviembre de 2026</p>
+	<p>En la provincia de Antabamba-Apurímac-Perú, realizan la festividad de la HUAYLIA, como máxima EXPRESIÓN CULTURAL de los PUEBLOS ANDINOS...</p>
+	<a href="post1.html">Leer más →</a>
+		
 	</article>
 
 	</main>
 
+
+	<!-------- PIE DE PAGINA ------->
+
 	<footer>
-		<p>Perú Sport</p>
+		<p> Raíces</p>
 		<p>WhatsApp: +51 946 147 814 | Correo: aranibarbravoronald@gmail.com</p>
 		<nav aria-label="Enlaces del pie de página">
 			<a href="#">Términos y condiciones</a>
