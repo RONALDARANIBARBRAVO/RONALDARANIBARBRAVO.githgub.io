@@ -1,0 +1,168 @@
+
+		body 
+		{
+            background-color: #D5E8D4;  /* Fondo negro */
+            color: black;             /* LetrasSSS blancas */
+            font-family: 'Merriweather', Georgia, serif;
+        }
+
+        body > header /* este header es hijo directo de body, no es el header del artgicle, ojito con eso muchachoo*/
+		
+		
+    	{
+        text-align: center;       /* ¡Esta línea centra el h1, h2 e img! */
+        padding: 30px 20px;       /* Le da espacio arriba, abajo y a los lados */
+        border-bottom: 1px solid #333; /* línea de separacion */
+    	}
+		/* tamaño del titulo*/
+		body > header h1
+		{
+		    font-size: 3rem;  /* tamaño del título */
+		}
+
+			.cursiva 
+    		{
+        	font-style: italic;       /* Pone el texto en cursiva */
+    		}
+
+    		/* MENÚ HORIZONTAL */
+		body > header nav {
+		    margin-top: 40px;   /* espacio entre el logo y el menú */
+		}
+		body > header nav ul {
+		    display: flex;
+		    justify-content: center;
+		    flex-wrap: wrap;
+		    gap: 12px 28px;
+		    list-style: none;
+		    padding: 0;
+		}
+		.fondo-contenido {
+		    background-color: #DCEBF5;   /* crema, cámbialo por el que quieras */
+		    padding: 20px 0;             /* aire arriba y abajo */
+		}
+
+
+		    	/* ===== CONTENEDOR: main + aside lado a lado ===== */
+		.contenedor {
+		    display: flex;
+		    gap: 30px;
+		    max-width: 1200px;
+		    margin: 0 auto;
+		    padding: 0 20px;
+		    align-items: flex-start;
+		}
+		.contenedor main { flex: 1; min-width: 0; }
+		.contenedor aside { width: 280px; flex-shrink: 0; padding: 15px; border-left: 3px solid #333; }
+		aside ul {
+			list-style: none;     /* quita las viñetas */
+		  	padding-left: 0;   /* sangría de la lista */
+		  	margin: 0;
+		}
+
+		aside li {
+		  margin-bottom: 12px;  /* espacio entre un enlace y otro */
+		  line-height: 1.5;     /* más aire entre las líneas del mismo enlace */
+		}
+		/* ===== ARTÍCULOS ===== */
+		main article
+		{
+		    max-width: 100%;     /* cambia 800px por 100% */
+		    margin: 0 auto;
+		    padding: 0 20px;
+		}
+
+
+
+		main article 
+   		 {
+        max-width: 800px; /* Limita el ancho para crear los espacios laterales */
+        margin: 0 auto;    /* Centra el bloque horizontalmente */
+        padding: 0 20px;   /* Espacio de seguridad para pantallas pequeñas */
+        }
+
+		main article img 
+		{
+			max-height: none; /* -----*/
+			height: auto;   /* mantiene la proporcion de la imagen*/
+			width: 100%;        /* ocupa todo el ancho del artículo */
+    		height: auto;
+			display: block; /*necesario para el marging*/
+  			margin: 0 auto;  /*centrado de imagen*/
+		}
+
+	/* TAMAÑO DE LETRA DE TODOS LOS TEXTOS Y DE LOS PARRAFOS*/
+
+		main article p
+		{
+		font-size: 22px;   /* JUSTO AQUI, LOS PIXELES */
+		line-height: 1.5; /*para que este compacto*/
+		}
+
+		.galeria {
+        display: flex;           /* Pone las fotos en fila horizontal */
+        justify-content: center; /* Las centra en la pantalla */
+        gap: 15px;               /* Espacio de separación entre cada foto */
+        margin-top: 50px;
+        margin-bottom: 30px;     /* Espacio debajo de las fotos */
+    	}
+    	.galeria img {
+        width: 100%;           /* Cada foto ocupa un tercio del ancho total */
+		max-width: 600px;        /* límite en computadora */        height: 300px;           /* Altura fija para que se vean parejas */
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
+        border-radius: 8px;      /* Bordes ligeramente redondeados */
+        box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* Sombra sutil para que resalten en el fondo negro */
+        #nosotros li
+    	}
+		{
+		color: white;   /* color del texto y de la viñeta */
+		}
+    	
+    	#nosotros li::marker
+		{
+		color: white;   /* color solo de la viñeta */
+		}
+
+		/* FOOTER */
+		body > footer
+		{
+			text-align: center;
+			padding: 30px 20px;
+			margin: 40px auto 0;   /* centra el bloque y deja espacio arriba */
+			max-width: 800px;
+			border-top: 1px solid #333;
+			font-size: 0.9rem;
+		}
+
+		body > footer a
+		{
+		color: black;
+		margin: 0 10px;
+		font-size: 1rem;
+		}
+		/* TÍTULOS DE LOS POSTS */
+		main article h2
+		{
+			font-size: 28px;
+		}
+
+		main article h3
+		{
+			font-size: 24px;
+		}
+		/* MINIATURAS EN EL ASIDE */
+		/*------IMPORTANTEEEE-------*/
+		aside li img
+		{
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		object-position: center top;
+		margin-top: 8px;
+		border-radius: 6px;
+		}
+		
